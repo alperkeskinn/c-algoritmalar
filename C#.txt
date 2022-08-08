@@ -1,0 +1,1075 @@
+int not;
+Console.Write("Notunuzu Girin: ");
+not = Convert.ToInt32(Console.ReadLine());
+if (not >= 60)
+    Console.WriteLine("Puan= " + not + " Başarılı");
+else
+    Console.WriteLine("Puan= " + not + " Başarısız");
+Console.ReadKey();  
+
+
+
+
+ string mevsim;
+            Console.Write("Bir mevsim adı giriniz : ");
+            mevsim = Console.ReadLine(); ;
+            if (mevsim == "ilkbahar")
+                Console.Write(mevsim + " Mevsimdeki aylar Mart Nisan Mayıs");
+            else if (mevsim == "yaz")
+                Console.Write(mevsim + " Mevsimdeki aylar Haziran Temmuz Ağustos");
+            else if (mevsim == "sonbahar")
+                Console.Write(mevsim + " Mevsimdeki aylar Eylül Ekim Kasım");
+            else if (mevsim == "kış")
+                Console.Write(mevsim +  "Mevsimdeki aylar Aralık Ocak Şubat");
+
+            else
+                Console.Write("Hatalı giriş yaptınız.");
+            Console.ReadKey();
+
+
+
+ string kuladi,sifre;
+            Console.Write("Kullanıcı adını girin : ");
+            kuladi=Console.ReadLine();
+            Console.Write("Şifreyi giriniz : ");
+            sifre = Console.ReadLine();
+            if (kuladi == "oner" && sifre == "1234")
+                Console.Write("Giriş Başarılı");
+            else
+                Console.Write("Hatalı Giriş Yaptınız");
+
+            
+            Console.ReadKey();
+
+
+
+
+
+int yas;
+            Console.Write("Yaşınızı girin : ");
+            yas = Convert.ToInt32(Console.ReadLine());
+            if (yas <= 16 || yas >= 65)
+                Console.Write(yas + "yaşındasınız sokağa çıkma yasağınız mevcut");
+            else
+                Console.Write(yas + "yaşındasınız sokağa çıkabilirsiniz");
+            Console.ReadKey();
+
+
+
+
+
+
+
+
+            string secim;
+            int sayi1, sayi2;
+            Console.Write("1.Sayıyı Giriniz : ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("2.Sayıyı Giriniz : ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());        
+            Console.Clear();
+            Console.WriteLine("Toplama [+]");
+            Console.WriteLine("Çıkarma [-]");
+            Console.WriteLine("Çarpma [x}");
+            Console.WriteLine("Bölme (/)");
+            Console.Write("Hangi işlemi yapmak istiyorsunuz ? : ");
+            secim=Console.ReadLine();
+            switch (secim)
+            {
+                case "+": Console.Write(sayi1 + "+" + sayi2 + "=" + (sayi1 + sayi2)); break;
+                case "-": Console.Write(sayi1 + "-" + sayi2 + "=" + (sayi1 - sayi2)); break;
+                case "x": Console.Write(sayi1 + "x" + sayi2 + "=" + (sayi1 * sayi2)); break;
+                case "/": Console.Write(sayi1 + "/" + sayi2 + "=" + (sayi1 / sayi2)); break;
+                default: Console.Write("Geçersiz işlem."); break;
+
+            }
+            Console.ReadKey();
+
+
+
+
+ string secim;
+            int sayi1, sayi2;
+            Console.Write("1.Sayıyı Giriniz : ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("2.Sayıyı Giriniz : ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());        
+            Console.Clear();
+            Console.WriteLine("Toplama [+]");
+            Console.WriteLine("Çıkarma [-]");
+            Console.WriteLine("Çarpma [x}");
+            Console.WriteLine("Bölme (/)");
+            Console.Write("Hangi işlemi yapmak istiyorsunuz ? : ");
+            secim=Console.ReadLine();
+            switch (secim)
+            {
+                case "+": Console.Write(sayi1 + "+" + sayi2 + "=" + (sayi1 + sayi2)); break;
+                case "-": Console.Write(sayi1 + "-" + sayi2 + "=" + (sayi1 - sayi2)); break;
+                case "x": Console.Write(sayi1 + "x" + sayi2 + "=" + (sayi1 * sayi2)); break;
+                case "/": if (sayi1 % sayi2 == 1)
+                            Console.WriteLine("Sayilar birbirine bölünemez.");
+                else
+                        Console.Write(sayi1 + "/" + sayi2 + "=" + (sayi1 / sayi2)); break;
+
+
+
+                default: Console.Write("Geçersiz işlem."); break;
+
+            }
+            Console.ReadKey();
+
+
+
+
+
+ string secim;
+            int sayi1, sayi2;
+            Console.Write("1.Sayıyı Giriniz : ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("2.Sayıyı Giriniz : ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());        
+            Console.Clear();
+            Console.WriteLine("Toplama [+]");
+            Console.WriteLine("Çıkarma [-]");
+            Console.WriteLine("Çarpma [x}");
+            Console.WriteLine("Bölme (/)");
+            Console.Write("Hangi işlemi yapmak istiyorsunuz ? : ");
+            secim=Console.ReadLine();
+            if (secim == "+")Console.Write(sayi1 + "+" + sayi2 + "=" + (sayi1 + sayi2));
+            else if (secim == "-")Console.Write(sayi1 + "-" + sayi2 + "=" + (sayi1 - sayi2));
+            else if (secim == "x")Console.Write(sayi1 + "x" + sayi2 + "=" + (sayi1 * sayi2));
+            else if (secim == "/") Console.Write(sayi1 + "/" + sayi2 + "=" + (sayi1 / sayi2)); 
+            else Console.Write("Hatalı Giriş Yaptınız.");
+
+
+            Console.ReadKey();
+
+
+
+
+
+
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("1'den 5 e kadar 4 sayı giriniz : ");
+        int[] sayi = new int[5];
+        sayi[0] = Convert.ToInt32(Console.ReadLine());
+        sayi[1] = Convert.ToInt32(Console.ReadLine());
+        sayi[2] = Convert.ToInt32(Console.ReadLine());
+        sayi[3] = Convert.ToInt32(Console.ReadLine());
+        sayi[4] = (15 - (sayi[0] + sayi[1] + sayi[2] + sayi[3]));
+        Console.WriteLine("Eksik olan sayi"  +  sayi[4]);
+        Console.ReadKey();
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   int[] sayi = new int[5];
+            sayi[1] = Convert.ToInt32(Console.ReadLine());
+            sayi[2] = Convert.ToInt32(Console.ReadLine());
+            sayi[3] = Convert.ToInt32(Console.ReadLine());
+
+            sayi[4] = sayi[1] + sayi[2] + sayi[3];
+            Console.WriteLine(sayi[4]);
+            Console.ReadKey()
+
+
+
+
+
+
+int diziboyutu;
+            int[] sayi;
+
+
+            diziboyutu = Convert.ToInt32(Console.ReadLine());
+            sayi = new int[diziboyutu];
+
+
+
+            int [] sayi1 = new int[5] { 2, 3, 4, 5, 6 };
+
+            int[] sayi2 = { 2, 3, 4, 5, 6 }
+
+
+
+
+
+
+
+
+
+
+
+int tektoplam = 0, cifttoplam  = 0;
+            for(int i = 1, j = 2; i <= 10 && j <= 10; i += 2, j += 2)
+            {
+                tektoplam += i;
+                cifttoplam += j;
+
+            }
+            Console.WriteLine("Tek Sayıların Toplamı = {0} ", tektoplam);
+            Console.WriteLine("Çift Sayıların Toplamı = {0}", cifttoplam);
+          Console.ReadKey();  
+
+
+
+
+
+
+
+
+ int toplam = 0, sayac = 1;
+
+            string cevap = "evet";
+
+            while (cevap == "evet")
+            {
+                Console.WriteLine("{0}. Sayıyı girin.", sayac);
+                toplam += Convert.ToInt32(Console.ReadLine());
+                
+                Console.WriteLine("Devam etmek istiyor musunuz?(evet)");
+                cevap = Console.ReadLine();
+
+                sayac++;
+            }
+            Console.WriteLine("Sonuç={0}", toplam);
+          Console.ReadKey();    
+
+
+
+
+
+
+
+
+
+            int toplam = 0, sayac = 1;
+
+            string cevap;
+
+            do
+            {
+                Console.WriteLine("{0}. Sayıyı girin.", sayac);
+                toplam += Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Devam etmek istiyor musunuz?(evet)");
+                cevap = Console.ReadLine();
+
+                sayac++;
+
+            }
+            while (cevap == "evet");
+         {
+
+                Console.WriteLine("Sonuç={0}", toplam);
+            }
+
+          Console.ReadKey();
+
+
+
+
+
+
+
+            int[] sayilar = { 3, 5, 1, 7, 4 };
+            foreach (int deger in sayilar)
+            {
+                Console.WriteLine(deger);
+            }
+          Console.ReadKey();     
+
+
+
+
+
+
+
+
+
+            for (char a; ;)
+            {
+                a = Convert.ToChar(Console.ReadLine());
+                if (a == 'q')
+                    break;
+            }
+
+            for (int a = 0; a < 51; a++)
+            {
+                if (a % 2 == 1)
+                    continue;
+                Console.WriteLine(a);
+            }
+          Console.ReadKey(); 
+
+
+
+
+
+
+
+
+
+ int[] sayilar = new int[10];
+            int elemanSayisi = sayilar.Length;
+            Console.WriteLine("Sayılar dizisi eleman sayısı =" + elemanSayisi);
+
+          Console.ReadKey(); 
+
+
+
+
+
+
+
+ int[] sayilar = new int[5];
+            for (int i = 0; i < sayilar.Length; i++) // i<5 'de olabilir
+            {
+                Console.WriteLine((i + 1) + ". sayiyi giriniz : ");
+                sayilar[i] = Convert.ToInt16(Console.ReadLine());
+            }
+            Array.Sort(sayilar);
+            Console.WriteLine("Sayıların sıralanmış hali");
+            Console.WriteLine("-------------------------");
+            foreach (int sayi in sayilar)
+                Console.WriteLine(sayi);
+            
+
+          Console.ReadKey(); 
+
+
+
+
+
+
+
+
+
+
+
+int[] sayilar = new int[5];
+            for (int i = 0; i < sayilar.Length; i++)
+            {
+                Console.WriteLine((i + 1) + ". sayiyi giriniz : ");
+                sayilar[i] = Convert.ToInt16(Console.ReadLine());
+            }
+            Array.Sort(sayilar);
+            Array.Reverse(sayilar);
+            Console.WriteLine("Sayıların sıralanmış hali");
+            Console.WriteLine("-------------------------");
+            foreach (int sayi in sayilar)
+                Console.WriteLine(sayi);
+            
+
+          Console.ReadKey(); 
+
+
+
+
+
+
+
+
+ int tahmin = 0, tutulan, sayac = 0;
+            Random rasgele = new Random();
+           
+            tutulan = rasgele.Next(1, 100);
+            while (tahmin != tutulan)
+            {
+                sayac++;
+                Console.WriteLine("Sayı girin : ");
+                tahmin = Convert.ToInt32(Console.ReadLine());
+                
+                if (tahmin > tutulan)
+                {
+                    Console.WriteLine("Sayıyı küçült");
+
+                }
+                else if (tahmin < tutulan)
+                {
+                    Console.WriteLine("Sayıyı büyült ");
+
+                }
+            }
+            Console.WriteLine("Tebrikler.");
+            Console.WriteLine("{0}.hakkınızda bildiniz",sayac);
+
+
+          Console.ReadKey(); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Console.Write("Metin Girin : ");
+            string tersyaz;
+            tersyaz = Console.ReadLine();
+
+            Console.WriteLine("Metnin ters hali");
+            for (int i = tersyaz.Length - 1; i>=0; i--)
+            {
+                Console.Write(tersyaz[i]);  
+            }
+
+
+          Console.ReadKey(); 
+
+
+
+
+int[,] dizi = new int[3, 3];
+            
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.WriteLine(i + " " + j + " nolu diziyi giriniz");
+                    dizi[i, j] = Convert.ToInt32(Console.ReadLine()); 
+
+                }
+            }
+            foreach (object deger in dizi)
+                Console.Write(deger + "-");
+
+
+          Console.ReadKey(); 
+
+
+
+
+
+
+
+
+
+ ArrayList  dizi = new ArrayList();
+            //Add metodu ile diziye terimler ekleniyor
+            dizi.Add("Ali");  // string tipinde deger
+            dizi.Add('A');  // char karakter tipinde deger
+            dizi.Add(10);    // int tipinde deger.
+            dizi.Add(20.22);    // double tipinde deger.
+            Console.WriteLine(dizi[1]);
+            //Dizi içerisinde değerler ekrana yazdırılıyor.
+            foreach (object deger in dizi)
+                Console.WriteLine(deger);
+
+
+
+
+          Console.ReadKey(); 
+
+
+
+
+
+
+
+
+
+
+ArrayList  dizi = new ArrayList();
+            //Add metodu ile diziye terimler ekleniyor
+            dizi.Add("Ali");  // string tipinde deger
+            dizi.Add('A');  // char karakter tipinde deger
+            dizi.Add(10);    // int tipinde deger.
+            dizi.Add(20.22);    // double tipinde deger.
+            dizi.Insert(2, "Veli");
+            dizi.Remove(10);
+            dizi.RemoveAt(1);
+            Console.WriteLine(dizi[1]);
+            //Dizi içerisinde değerler ekrana yazdırılıyor.
+            foreach (object deger in dizi)
+                Console.WriteLine(deger);
+
+
+
+
+          Console.ReadKey(); 
+
+
+
+
+
+
+
+
+double sayi;
+            Console.WriteLine("Sinüsünü almak istediğiniz sayıyı girin: ");
+            sayi = Convert.ToDouble(Console.ReadLine());
+            
+            double sayi1 = Math.Sin(sayi);
+
+            Console.WriteLine(sayi1);
+
+
+
+
+
+
+            Console.ReadKey(); 
+
+
+
+
+
+
+
+
+
+string metin;
+            metin = Console.ReadLine();
+            Console.WriteLine(metin.ToLower());
+            Console.WriteLine(metin.ToUpper());
+
+            string kuladi, sifre;
+            Console.Write("Kullanıcı adını giriniz : ");
+            kuladi = Console.ReadLine();
+            Console.Write("Şifreyi giriniz : ");
+            sifre = Console.ReadLine();
+
+            if (kuladi.ToLower() == "isik" && sifre.ToLower() == "universitesi")
+                Console.Write("Giriş Başarılı!");
+            else
+                Console.Write("Giriş Başarısız.");
+            
+
+
+
+
+            Console.ReadKey(); 
+
+
+
+
+
+
+
+
+/string metin = "           Işık ÜİVERSİTES           ";
+            Console.WriteLine(metin);
+            Console.WriteLine(metin.Trim()+ " trim ");
+            Console.WriteLine(metin.TrimStart()+ "trimstart");
+            Console.WriteLine(metin.TrimEnd()+ " trimend");
+            Console.ReadKey();/
+
+            /* string metin2 = "Işık ÜNVERSİTESİ";
+             Console.WriteLine(metin2);
+             Console.WriteLine(metin2.Substring(0, 4));
+             Console.WriteLine(metin2.Substring(4));
+             Console.ReadKey();*/
+
+
+
+
+
+string kuladi, sifre;
+            bool deger1, deger2;
+            Console.WriteLine("Kullanıcı adını giriniz : ");
+            kuladi = Console.ReadLine();    
+            deger1 = Convert.ToBoolean(kuladi.Equals("isik"));
+
+            Console.Write("Şifreyi giriniz : ");
+            sifre = Console.ReadLine();
+            deger2 = Convert.ToBoolean(sifre.Equals("universitesi"));
+            if (deger1 && deger2)
+                Console.Write("giriş başarılı");
+            else
+                Console.Write("Giriş başarısız");
+            Console.ReadKey();
+
+
+
+
+ DateTime bugun = DateTime.Today;
+        
+            Console.WriteLine(bugun);
+
+            DateTime simdi = DateTime.Now;
+            Console.WriteLine(simdi);
+            Console.ReadKey();
+
+
+
+
+
+
+ DateTime tarih1 = new DateTime(1990, 12, 31);
+            Console.Write("Doğum tarihinizi GG/AA/YYYY şeklinde giriniz : ");
+
+            DateTime dogumTarihi = Convert.ToDateTime(Console.ReadLine());
+            int sonuc = DateTime.Compare(dogumTarihi, tarih1);
+            if (sonuc == -1)
+                Console.Write("Üzgünüz, sınava giremezsiniz...");
+            else
+                Console.Write("Tebrikler, sınava girebilirsiniz...");
+            Console.ReadKey();
+
+
+
+
+
+ static void Deneme()
+        {
+            Console.WriteLine("deneme");
+        }
+        static void Main(string[] args)          
+        {
+            Deneme();
+            
+
+            Console.ReadKey();
+        }
+
+
+
+ private void Deneme()
+        {
+            Console.WriteLine("deneme");
+        }
+        static void Main(string[] args)          
+        {
+            Program cagir = new Program();
+            cagir.Deneme(); 
+            
+
+            Console.ReadKey();
+        }
+
+
+
+
+    static int kucukdegeribul(int a, int b)
+        {
+            int result;
+            if (a < b)
+                result = a;
+            else
+                result = b;
+            return result;
+        }
+        static void Main(string[] args)          
+        {
+            int sayi1 ,sayi2 ;  
+            Console.WriteLine("1. sayıyı giriniz : ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("2. sayıyı giriniz : ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+
+         
+            Console.WriteLine(kucukdegeribul(sayi1, sayi2));
+            Console.ReadKey();
+        }
+
+
+
+
+
+
+
+ static int ustual(int a, int b, int c=1)
+
+        {
+            int i;
+            for ( i = 0; i < b; i++)
+            {
+                c = c * a;
+            }
+
+            return c;
+        }
+        static void Main(string[] args)          
+        {
+            int sayi1 ,sayi2 ;  
+            Console.WriteLine("taban giriniz : ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("ust giriniz giriniz : ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+
+         
+            Console.WriteLine(ustual(sayi1, sayi2));
+            Console.ReadKey();
+
+
+
+
+
+int kenarUzunlugu; // kenarUzunlugu adında integer tipinde bir değişken tanımlandı
+
+            string nesne; // nesne adında string tipi değişken tanımlandı
+            Console.Write("Uzunluk : "); // konsola parantez içindeki ifade yazdırıldı
+            kenarUzunlugu = Convert.ToInt32(Console.ReadLine());  // kullanıcıdan alınan kenarUzunlugu verisi int tipinde cekildi
+            Console.Write("Ekrana yazılacak harf ya da nesne : "); // konsola parantez içindeki ifade yazdırıldı
+            nesne = Console.ReadLine(); // kullanıcıdan alınan nesne verisi çekildi
+            int ortaNokta = kenarUzunlugu - 1; // ortaNokta adında int tipinde bir değişken tanımlandı ve (kenarUzunluğu - 1) ' e eşitlendi.
+            int taban = kenarUzunlugu * 2 - 1; // taban adında int tipinde bir değişken tanımlandı ve (kenarUzunluğu * 2 - 1) ' e eşitlendi.
+            for (int i = 0; i < kenarUzunlugu; i++) // döngü tanımlandı, int formatında i değişkeni 0 olarak tanımlandı ve i değeri kenarUzunlugu'na eşit olana kadar 1 arttırıldı.
+            {
+                for (int k = 0; k < taban; k++) // döngü tanımlandı, int formatında k değişkeni 0 olarak tanımlandı ve k değeri taban'a eşit olana kadar 1 arttırıldı
+                {
+                    if ((i + k == ortaNokta || k - i == ortaNokta)) // i + k ortaNokta değerine eşitse veya k - i ortaNokta değerine eşitse çalıştırılacak bir koşul tanımlandı
+                    {
+                        Console.Write(nesne); // ekrana nesne yazdırıldı
+
+                    }
+
+                    else if ((i + k >= ortaNokta && k - 1 <= ortaNokta)) // i + k ortaNokta değerine büyükeşitse ve k - i ortaNokta değerine küçükeşitse çalıştırılacak bir koşul tanımlandı
+                    {
+                        Console.Write("*"); // ekrana * yazdırıldı
+
+                    }
+                    else if (i == ortaNokta) // i değeri ortaNoktaya eşitse çalıştırılacak bir koşul tanımlandı.
+                        Console.Write("*");
+                    else // koşullar sağlanmazsa 
+                        Console.Write(" "); // ekrana 1 blok boşluk bırakılmak için boşluk yazdırıldı.
+                }
+                Console.WriteLine(); // yeni çalışacak kodun bir alt satırdan başlamasını sağlamak için alt satıra geçildi.
+
+            }
+            Console.ReadLine(); // veri almak için readline girildi.
+
+
+
+
+
+
+
+
+   string girilen = "yazilim";
+                List<char> harf = new List<char>() { 'y', 'a', 'z', 'i', 'l', 'i', 'm' };
+                  Console.WriteLine("Kelime 'yazilim' ");
+                  Console.WriteLine("Aramak istediğiniz karakteri giriniz: ");
+                girilen = Console.ReadLine().ToLower();
+             int  sayac = 0;
+            for (int i = 0; i < harf.Count; i++)
+            {
+                if (girilen.Contains(harf[i]))
+                {
+                    sayac++;
+                }
+            }
+            Console.WriteLine(" 'yazilim' kelimesinde " + sayac + " adet " + girilen + " harfi var");
+
+            Console.ReadKey();
+
+
+
+
+ try
+            {
+
+                int s1 = int.Parse(textBox1.Text);
+                int s2 = int.Parse(textBox2.Text);
+                label4.Text = Convert.ToString(s1 + s2);
+            }
+            catch
+            {
+                MessageBox.Show("Lütfen sayı girin");
+            }
+            finally
+            {
+                textBox1.Text = "";
+                textBox2.Text = "";
+            }
+
+
+ private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+
+                int s1 = int.Parse(textBox1.Text);
+                textBox1.BackColor = Color.White;
+            }
+            catch
+            {
+                textBox1.BackColor= Color.Red;
+                
+            }
+        }
+
+
+
+
+
+
+private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                int s1 = int.Parse(textBox1.Text);
+                int s2 = int.Parse(textBox2.Text);
+                label4.Text = Convert.ToString(s1 + s2);
+            }
+            catch
+            {
+                MessageBox.Show("Lütfen sayı girin");
+            }
+            finally
+            {
+                textBox1.Text = "";
+                textBox2.Text = "";
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+
+                int s1 = int.Parse(textBox1.Text);
+                textBox1.BackColor = Color.White;
+            }
+            catch
+            {
+                textBox1.BackColor= Color.Red;
+                
+            }
+        }
+
+
+
+
+private void button1_Click(object sender, EventArgs e)
+        {
+            double fiyat = Convert.ToDouble(textBox1.Text);
+            double adet = Convert.ToDouble(textBox2.Text);
+            double toplam = fiyat * adet;
+            double kdv = 0;
+            if (radioButton1.Checked)
+            {
+                kdv = 0;
+            }
+            else if (radioButton3.Checked)
+            {
+                kdv = toplam * 0.01;
+
+            }
+            else if (radioButton4.Checked)
+            {
+                kdv = toplam * 0.08;
+            }
+            else if (radioButton5.Checked)
+            {
+                kdv = toplam * 0.18;
+            }
+            double toplamtutar = toplam + kdv;
+            textBox3.Text = kdv + "TL";
+            textBox4.Text = toplam + kdv + "TL";
+        }
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp3
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            groupBox1.Hide();
+            button1.Visible = false;
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            groupBox1.Show();
+            button1.Visible=true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string ad, diller = "";
+            ad = textBox1.Text;
+            if (radioButton2.Checked)
+                MessageBox.Show("Merhaba " + ad + " Programlama dili bilen personel aranmaktadır");
+            else if (radioButton1.Checked)
+            {
+                if (checkBox1.Checked)
+                    diller = diller + checkBox1.Text + " ";
+                if (checkBox2.Checked)
+                    diller = diller + checkBox2.Text + " ";
+                if (checkBox3.Checked)
+                    diller = diller + checkBox3.Text + " ";
+                if (checkBox4.Checked)
+                    diller = diller + checkBox4.Text + " ";
+                if (checkBox5.Checked)
+                    diller = diller + checkBox5.Text + " ";
+                if (checkBox6.Checked)
+                    diller = diller + checkBox6.Text + " ";
+
+                MessageBox.Show("Merhaba " + ad + " ; " + diller + "Programlama dilini bilmektesiniz");
+
+            }
+            else
+                MessageBox.Show("Lütfen tüm alanları doldurun");
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            button1.Visible = true;
+            groupBox1.Hide();
+        }
+    }
+}
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp4
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == 0)
+                label1.ForeColor = Color.Red;
+            if (comboBox1.SelectedIndex == 1)
+                label1.ForeColor = Color.Green;
+            if (comboBox1.SelectedIndex == 2)
+                label1.ForeColor = Color.Blue;  
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox2.SelectedIndex == 0)
+                label1.BackColor = Color.Black;
+            if (comboBox2.SelectedIndex == 1)
+                label1.BackColor = Color.Orange;
+            if (comboBox2.SelectedIndex == 2)
+                label1.BackColor= Color.Purple;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            comboBox3.Items.Add("İstanbul");
+            comboBox3.Items.Add("Ankara");
+            comboBox3.Items.Add("İzmir");
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox3.SelectedIndex == 0)
+            {
+                comboBox4.Items.Clear();
+                comboBox4.Text = "";
+                string[] ilce = { "Beyoğlu", "Sarıyer", "Kadıköy" };
+                comboBox4.Items.AddRange(ilce);
+            }
+            if (comboBox3.SelectedIndex == 1)
+            {
+                comboBox4.Items.Clear();
+                comboBox4.Text = "";
+                string[] ilce = { "Altındağ", "Çankaya", "Beypazarı" };
+                comboBox4.Items.AddRange(ilce);
+            }
+            if (comboBox3.SelectedIndex == 2)
+            {
+                comboBox4.Items.Clear();
+                comboBox4.Text = "";
+                string[] ilce = { "Buca", "Torbalı", "Bornova" };
+                comboBox4.Items.AddRange(ilce);
+            }
+        }
+    }
+}

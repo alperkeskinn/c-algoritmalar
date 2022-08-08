@@ -1,0 +1,313 @@
+ int sayi;
+            int toplam = 0;
+            int baslangicsayisi;
+            Console.WriteLine("Sayı girişi yapınız : ");
+            baslangicsayisi = Convert.ToInt32(Console.ReadLine());
+
+            while (baslangicsayisi != 0)
+            {
+               
+                 
+                for (int i = 0; ; i++)
+                {
+                    Console.WriteLine("Sayı girişi yapınız : ");
+                    sayi = Convert.ToInt32(Console.ReadLine());
+                    toplam += sayi;
+                    if (sayi == 0)
+                    {
+                        break;
+                        
+                    }
+                    
+                }
+
+
+                break;
+            }
+            Console.WriteLine("Sayıların toplamı = " + (toplam + baslangicsayisi));
+
+
+            Console.ReadKey();
+
+-------------------------------------------------------------------------
+
+
+
+string ad;
+            string soyad;
+
+            Console.WriteLine("Adınızı giriniz : ");
+            ad = Console.ReadLine();
+            Console.WriteLine("Soyadınızı giriniz : ");
+            soyad = Console.ReadLine().ToUpper();
+
+
+            Console.WriteLine((char.ToUpper(ad[0])+ad.Substring(1) + Environment.NewLine + soyad));
+            Console.ReadKey();
+
+
+-------------------------------------------------------------------------
+
+
+           int negatifsayilar = 0;
+           int pozitifsayilar = 0; 
+           int[] sayilar = new int[5];
+            for (int i = 0; i < sayilar.Length; i++)
+            {
+                Console.WriteLine((i + 1) + ". Sayıyı Giriniz : ");
+                sayilar[i] = Convert.ToInt32(Console.ReadLine());
+
+                if (sayilar[i] < 0)
+                {
+                   negatifsayilar++;
+                }
+                else if (sayilar[i] > 0)
+                {
+                    pozitifsayilar++;
+                }
+            }
+            Console.WriteLine(negatifsayilar + "Tane negatif sayi vardır." + Environment.NewLine + pozitifsayilar + "Tane pozitif sayı vardır. ");
+            Console.ReadKey();
+
+
+
+-----------------------------------------------------------------------------
+
+ for (int i = 1; i < 100; i++)
+            
+                if (i % 2 == 1)
+                {
+                    
+                    Console.WriteLine(i);
+                }
+                Console.ReadKey();
+
+
+
+-----------------------------------------------------------------------------
+
+int ciftortalama = 0;
+            int tekortalama = 0;
+            int ciftsayi = 0;
+            int teksayi = 0;
+            int sayi;
+          int[] sayilar = new int[20];
+
+            for (int i = 0; i < sayilar.Length; i++)
+            {
+                Console.WriteLine("Sayı girişi yapınız : ");
+                sayi = Convert.ToInt32(Console.ReadLine()) ;
+
+
+                if (sayi %2==0)
+                {
+                    ciftsayi++;
+                    ciftortalama += sayi;
+                }
+                else
+                {
+                    teksayi++;
+                    tekortalama += sayi;
+                }
+            }
+            Console.WriteLine(ciftortalama/ciftsayi + " Çift sayıların ortlaması ");
+            Console.WriteLine(tekortalama / teksayi + " Tek sayıların ortlaması ");
+            Console.ReadKey();
+
+
+--------------------------------------------------
+
+ Console.WriteLine("0 ile 100 arasındaki sayıların 7’ye bölümünden 3 kalanını veren sayılar");
+            for (int i = 0; i < 100; i++)
+            {
+                if (i %7==3 )
+                {
+                    Console.WriteLine(i);
+
+
+                }
+                
+            }
+                
+            
+            Console.ReadKey();
+
+
+
+-------------------------------------------------------
+
+ int sayi = 0;
+            int sayilar = 0;
+            for (int i = 1; i < 1000; i++)
+            {
+                if (i %12==0 )
+                {
+                    sayilar += i;
+
+                    sayi++;
+
+                }
+                
+            }
+
+            Console.WriteLine(" 1 ile 1000 arasındaki sayıların 12ye tam bölünenlerin ortalaması : " + sayilar/sayi);
+            Console.ReadKey();
+          
+
+-------------------------------------------------------
+
+  int a =0, b=0;
+          
+            int sayi;
+            int[] sayilar = new int[20];
+            for (int i = 0; i < sayilar.Length; i++)
+            {
+                Console.WriteLine((i+1) + ". Sayıyı giriniz");
+                sayi = Convert.ToInt32(Console.ReadLine()); 
+
+                if (sayi >= 50)
+                {
+                    
+                    a += sayi;
+              
+                }
+
+                else if (sayi <50)
+                {
+                    
+                    b += sayi;
+                }
+
+
+
+            }
+
+            Console.WriteLine(a / b);
+            Console.ReadKey();
+
+------------------------------------------------------------
+
+int toplam = 0;
+            int kactanesayi = 0;
+            Console.Write("Sayı girişi yapınız (Durdurmak icin '0' yazın.)  :  ");
+            int baslangicsayisi = Convert.ToInt32(Console.ReadLine());
+
+            while (baslangicsayisi != 0)
+            {
+                for (int i = 0; ; i++)
+                {
+                    Console.Write("Sayı girişi yapınız (Durdurmak icin '0' yazın.)  :  " );
+                    
+                        int sayi = Convert.ToInt32(Console.ReadLine());
+                    if (sayi != 0)
+                    {
+                        kactanesayi++;
+                        toplam += sayi;
+                    }
+                    else
+                    {
+                        Console.WriteLine((kactanesayi + 1) + " Tane sayı girildi.");
+                        Console.WriteLine("Sayıların toplamı = " + (toplam + baslangicsayisi ));
+                        Console.WriteLine("Girilen sayıların ortalaması = " + (toplam + baslangicsayisi) / (kactanesayi + 1));
+                    }
+                    
+                }
+                break;   
+            }
+           
+            Console.ReadKey();
+
+-------------------------------------------------------------------
+
+int pozitiftoplam = 0;
+            int negatiftoplam = 0;
+            
+                for (int i = 0;  ; i++)
+                {
+                    Console.Write("Sayı girişi yapınız (Durdurmak icin '0' yazın.)  :  " );
+                    
+                        int sayi = Convert.ToInt32(Console.ReadLine());
+                    if (sayi != 0)
+                    {
+                        if (sayi < 0 )
+                        negatiftoplam += sayi;
+                        else
+                            pozitiftoplam += sayi;
+                    }
+                    else 
+                    {
+                        Console.WriteLine("pozitif sayıların toplamı = " + pozitiftoplam);
+                        Console.WriteLine("negatif sayıların topamı = " + negatiftoplam);
+
+                    }
+                    
+                        
+                }   
+                  
+            
+           
+            Console.ReadKey();
+
+----------------------------------------------------------------------------
+
+
+            x = -b + b * b - 4 * a * c * 2 * a;
+            return x;
+            
+        }
+
+        static void Main(string[] args)
+        {
+            int sayi1,sayi2, sayi3;
+            
+
+            Console.WriteLine(" x = -b + b2 – 4ac2a ");
+            Console.WriteLine("*********************");
+            Console.WriteLine(" b değişkenini giriniz : ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(" a değişkenini giriniz : ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());    
+            Console.WriteLine(" c değişkenini giriniz : ");
+            sayi3 = Convert.ToInt32(Console.ReadLine());  
+            
+
+            Console.WriteLine(formul(sayi1,sayi2,sayi3));
+
+
+            Console.ReadKey();
+
+--------------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace denemeler1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int sayi;
+            int kalan;
+            int sayac = 0;
+            Console.WriteLine("Sayı girişi yapınız");
+            sayi = Convert.ToInt32(Console.ReadLine());
+
+            while(sayi != 0)
+            {
+                kalan = sayi % 10;
+                sayi = (sayi - kalan) / 10;
+                sayac++;
+                
+
+
+
+            }
+            Console.WriteLine(sayac );
+            Console.ReadKey();
+        }
+    }
+}
